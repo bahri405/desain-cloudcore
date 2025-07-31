@@ -1,0 +1,32 @@
+/* peringatan */
+.peringatan-banner {
+	background-color: #000;
+	color: #fff;
+	padding: 10px 10px;
+}
+
+.peringatan-text {
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.peringatan-text i {
+	color: #ffcc00;
+	font-size: 1.3rem;
+	margin-right: 10px;
+}
+
+.peringatan-text strong {
+	font-weight: 700;
+}
+
+.peringatan-logo img {
+	height: 50px;
+}
+
+.peringatan-logo small {
+	font-size: 0.6rem;
+	color: #ccc;
+}
+
