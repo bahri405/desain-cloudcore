@@ -30,3 +30,154 @@
 	color: #ccc;
 }
 
+/* .discount__pic {
+	height: 387px;
+} */
+
+/* button */
+.buy-button {
+  background: linear-gradient(to right, #8000ff, #00ff66); /* Ungu ke hijau */
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px; /* rounded full */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* shadow halus */
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buy-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* background gradasi */
+.gradient-bg {
+  background: linear-gradient(to right, #8000ff, #00ff66); /* dari ungu ke hijau */
+  min-height: 100vh; /* biar full satu layar */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* caraousel banner*/
+.carousel-control-prev, .carousel-control-next {
+  background-color: rgba(138, 43, 226, 0.5); /* warna ungu transparan */
+  width: 50px; /* bisa disesuaikan */
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%; /* agar bulat */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 70% 70%; /* biar ikon tidak kepenuhan */
+}
+/* end */
+
+
+/*** Team Start ***/
+
+:root {
+  --bs-secondary: #00ff66;
+  --bs-white: #ffffff;
+  --bs-primary: #8000ff;
+}
+
+/* .team-item {
+    border-top: 30px solid var(--bs-primary) ;
+    background: rgba(239, 239, 241, 0.8);
+} */
+
+.team-content::before {
+    height: 200px;
+    display: block;
+    content: "";
+    position: relative;
+    top: -101px;
+    /* background: var(--bs-primary); */
+    background: linear-gradient(to right, #8000ffb4, #00ff6697);
+    clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
+    padding: 60px;
+    opacity: 1;
+}
+
+.team-img-icon {
+    position: relative;
+    margin-top: -200px;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.team-img {
+    border: 15px solid var(--bs-white);
+}
+
+.team-img img {
+    /* border: 10px solid var(--bs-secondary); */
+    transition: .5s;
+}
+
+/* .team-item:hover h4 {
+    color: var(--bs-primary);
+    transition: .5s;
+} */
+
+.team-item:hover .team-img img {
+    transform: scale(1.05);
+    /* border: 5px solid var(--bs-secondary); */
+}
+
+.team-carousel .owl-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.team-carousel .owl-nav {
+    position: absolute;
+    top: -100px;
+    right: 50px;
+    display: flex;
+}
+
+.team-carousel .owl-nav .owl-prev,
+.team-carousel .owl-nav .owl-next {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    margin-left: 15px;
+    background: var(--bs-secondary);
+    color: var(--bs-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.team-carousel .owl-nav .owl-prev:hover,
+.team-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-primary);
+    color: var(--bs-white);
+}
+
+@media (max-width: 992px) {
+    .team-carousel {
+        margin-top: 3rem;
+    }
+
+    .team-carousel .owl-nav {
+        top: -85px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        margin-left: -15px;
+    }
+}
+
+/*** Team Start ***/

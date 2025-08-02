@@ -136,7 +136,10 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	/* height: 70%; */
 }
+
+
 
 .spad {
 	padding-top: 100px;
@@ -165,13 +168,13 @@ ol {
 	font-weight: 600;
 	padding: 12px 30px 10px;
 	color: #ffffff;
-	background: #ca1515;
+	background: linear-gradient(to right, #8000ffb4, #00ff6697);
 }
 
 .site-btn {
 	font-size: 14px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #8000ff;
 	font-weight: 600;
 	border: none;
 	text-transform: uppercase;
@@ -323,7 +326,7 @@ ol {
 }
 
 .header__logo {
-	padding: 26px 0;
+	padding: 5px 0;
 }
 
 .header__logo a {
@@ -332,6 +335,9 @@ ol {
 
 .header__menu {
 	padding: 30px 0 27px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .header__menu ul li {
@@ -424,7 +430,8 @@ ol {
 
 .header__right {
 	text-align: right;
-	padding: 30px 0 27px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .header__right__auth {
@@ -596,8 +603,8 @@ ol {
 .trend__item__pic {
 	float: left;
 	margin-right: 25px;
-	width: 90px;
-	height: 90px;
+	width: 120px;
+	height: 120px;
 }
 
 .trend__item__text {
@@ -852,6 +859,7 @@ ol {
 
 .footer {
 	padding-top: 55px;
+	background: linear-gradient(to right, #8000ff, #00ff66);
 }
 
 .footer__about {
@@ -860,10 +868,11 @@ ol {
 
 .footer__about p {
 	margin-bottom: 20px;
+	color: #fff;
 }
 
 .footer__logo {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
 .footer__payment a {
@@ -893,7 +902,7 @@ ol {
 
 .footer__widget ul li a {
 	font-size: 14px;
-	color: #666666;
+	color: #fff;
 	line-height: 30px;
 }
 
@@ -1041,6 +1050,7 @@ ol {
 
 .categories__item {
 	height: 314px;
+	/* min-width: 472px; */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1050,6 +1060,8 @@ ol {
 	padding-left: 30px;
 	margin-bottom: 10px;
 	margin-right: 10px;
+	overflow: hidden;
+	position: relative;
 }
 
 .categories__item.categories__large__item {
@@ -1059,7 +1071,9 @@ ol {
 
 .categories__item.categories__large__item .categories__text {
 	max-width: 480px;
+	
 }
+
 
 .categories__item.categories__large__item .categories__text p {
 	margin-bottom: 15px;
@@ -1069,6 +1083,7 @@ ol {
 	font-family: "Cookie", cursive;
 	color: #111111;
 	margin-bottom: 5px;
+	
 }
 
 .categories__text h4 {
@@ -1145,6 +1160,7 @@ ol {
 
 .product__item {
 	margin-bottom: 35px;
+	height: 30%;
 }
 
 .product__item:hover .product__hover li {
@@ -1434,7 +1450,7 @@ ol {
 	font-weight: 700;
 	display: inline-block;
 	padding: 5px 16px 5px 24px;
-	border: 2px solid #ff0000;
+	border: 2px solid #8000ff;
 	position: absolute;
 	right: 0;
 	bottom: -5px;
@@ -1489,14 +1505,14 @@ ol {
 	height: 14px;
 	width: 14px;
 	border-radius: 50%;
-	background: #ca1515;
+	background: #8000ff;
 	border: none;
 	outline: none;
 	cursor: pointer;
 }
 
 .filter-range-wrap .price-range .ui-slider-range {
-	background: #ca1515;
+	background: #8000ff;
 	border-radius: 0;
 }
 
@@ -1724,7 +1740,7 @@ ol {
 .product__details__price {
 	font-size: 30px;
 	font-weight: 600;
-	color: #ca1515;
+	color: #8000ff;
 	margin-bottom: 30px;
 }
 
@@ -1790,7 +1806,7 @@ ol {
 	display: inline-block;
 	font-size: 14px;
 	color: #ffffff;
-	background: #ca1515;
+	background: #8000ff;
 	font-weight: 600;
 	text-transform: uppercase;
 	padding: 14px 30px 15px;
@@ -3032,7 +3048,7 @@ ol {
 
 .contact__address ul li h6 i {
 	font-size: 16px;
-	color: #ca1515;
+	color: #8000ff;
 	margin-right: 5px;
 }
 
@@ -3242,7 +3258,9 @@ ol {
 		cursor: pointer;
 		position: absolute;
 		right: 15px;
-		top: 24px;
+		top: 90px;
+		
+
 	}
 	.offcanvas-menu-overlay {
 		position: fixed;
@@ -3396,6 +3414,7 @@ ol {
 
 /* Wide Mobile = 480px */
 
+
 @media only screen and (max-width: 767px) {
 	.canvas__open {
 		display: block;
@@ -3409,8 +3428,8 @@ ol {
 		border-radius: 2px;
 		cursor: pointer;
 		position: absolute;
-		right: 15px;
-		top: 24px;
+		right: 30px;
+		top: 174px;
 	}
 	.offcanvas-menu-overlay {
 		position: fixed;
@@ -3431,11 +3450,12 @@ ol {
 	}
 	.offcanvas-menu-wrapper {
 		position: fixed;
+		top: 0;
 		left: -270px;
 		width: 270px;
 		height: 100%;
 		background: #ffffff;
-		padding: 90px 20px 30px 30px;
+		padding: 80px 20px 30px 30px;
 		display: block;
 		z-index: 99;
 		overflow-y: auto;
@@ -3501,7 +3521,8 @@ ol {
 		margin-bottom: 25px;
 	}
 	.offcanvas__widget {
-		text-align: center;
+		text-align: end;
+		margin-right: 20px;
 		margin-bottom: 20px;
 	}
 	.offcanvas__widget li {
