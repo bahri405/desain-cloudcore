@@ -78,7 +78,20 @@
 .carousel-control-next-icon {
   background-size: 70% 70%; /* biar ikon tidak kepenuhan */
 }
+
+.carousel-inner img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+        .carousel-inner img {
+            height: 300px;
+        }
+    }
+
 /* end */
+
 
 
 /*** Team Start ***/
@@ -121,6 +134,8 @@
 .team-img img {
     /* border: 10px solid var(--bs-secondary); */
     transition: .5s;
+    /* height: 200px; */
+
 }
 
 /* .team-item:hover h4 {
@@ -206,3 +221,190 @@
   height: 28px;
 }
 
+/* about */
+
+.progress-circle {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      margin: 1rem auto 1rem auto;
+    }
+
+    .progress-circle svg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+
+    .progress-circle circle {
+      fill: none;
+      stroke-width: 12;
+    }
+
+    .progress-bg {
+      stroke: #ddd;
+    }
+
+    .progress-bar {
+      stroke: url(#grad);
+      stroke-linecap: round;
+    }
+
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .ticks {
+      position: absolute;
+      inset: -6px;
+      transform: rotate(-90deg);
+      z-index: 1;
+    }
+
+    .ticks::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: repeating-conic-gradient(#aaa 0deg 1deg, transparent 1deg 3deg);
+      border-radius: 50%;
+      mask-image: radial-gradient(circle at center, transparent 60%, black 61%);
+      -webkit-mask-image: radial-gradient(circle at center, transparent 60%, black 61%);
+    }
+
+    .circle-text h5 {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .circle-text p {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0;
+    }
+
+    @media (max-width: 576px) {
+      .progress-text {
+        font-size: 16px;
+      }
+
+      .circle-text h5 {
+        font-size: 1rem;
+      }
+
+      .circle-text p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .factory-card {
+      background-color: #3b5664;
+      color: white;
+      padding: 30px;
+    }
+    .factory-card h5 {
+      font-size: 14px;
+      border: 2px solid white;
+      padding: 6px 20px;
+      display: inline-block;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    .factory-card h2 {
+      font-weight: 600;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    .factory-card p {
+      font-size: 14px;
+      margin-top: 15px;
+    }
+    .wave {
+      margin-top: 20px;
+    }
+    .img-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .img-wrapper {
+      height: 100%;
+    }
+    @media (max-width: 768px) {
+      .factory-card {
+        padding: 20px;
+      }
+      .factory-card h2 {
+        font-size: 20px;
+      }
+    }
+
+    
+    
+    .certificate-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2d4c5b;
+      margin-bottom: 30px;
+    }
+
+    .certificate-img {
+      border: 1px solid #ccc;
+      padding: 5px;
+      background-color: #fff;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      
+    }
+
+    .thumb-img {
+      border: 1px solid #ddd;
+      padding: 5px;
+      background-color: #fff;
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .thumb-img {
+        height: 160px;
+        margin: 10px;
+      }
+    }
+
+/* end about */
+
+/* details produk */
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #3b5664;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 32px;
+    color: #3b5664;
+  }
+
+  .label-title {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #3b5664;
+  }
+
+  .label-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3b5664;
+  }
