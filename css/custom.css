@@ -34,24 +34,25 @@
 	height: 387px;
 } */
 
-/* button */
-.buy-button {
-  background: linear-gradient(to right, #8000ff, #00ff66); /* Ungu ke hijau */
-  color: white;
-  border: none;
-  padding: 12px 28px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 50px; /* rounded full */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* shadow halus */
-  cursor: pointer;
-  transition: 0.3s ease;
+
+
+/* home cooming son label */
+.coming-soon-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* background-color: #ff5e57; */
+    border: #ca1515 1px solid;
+    color: #ca1515;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+    /* border-radius: 20px; */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 10;
+    text-transform: uppercase;
 }
 
-.buy-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
 
 /* background gradasi */
 .gradient-bg {
@@ -79,16 +80,16 @@
   background-size: 70% 70%; /* biar ikon tidak kepenuhan */
 }
 
-.carousel-inner img {
+/* .carousel-inner img {
         height: 400px;
         object-fit: cover;
-    }
+    } */
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
         .carousel-inner img {
             height: 300px;
         }
-    }
+    } */
 
 /* end */
 
@@ -408,3 +409,68 @@
     font-weight: 600;
     color: #3b5664;
   }
+
+  /* btn gradient */
+  .btn-gradient {
+  background: linear-gradient(to right, #9f3fff, #3b5664);
+  border: none;
+  color: #fff;
+  transition: 0.3s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #3b5664, #9f3fff);
+  color: #fff;
+}
+
+/* h1 franchise */
+.responsive-heading {
+        font-size: 2.5rem; /* default */
+    }
+
+    @media (min-width: 576px) {
+        .responsive-heading {
+            font-size: 3rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .responsive-heading {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .responsive-heading {
+            font-size: 4rem;
+        }
+    }
+
+/* filter shop */
+.filter-btn.active {
+    font-weight: bold;
+    color: #9f3fff !important;
+    border-bottom: 2px solid #9f3fff;
+  }
+
+.card-heading {
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #3b5664;
+    margin-bottom: 20px;
+}
+
+.card-heading a{
+    color: #3b5664;
+    text-decoration: none;
+}
+  
+.product__wrapper {
+    transition: all 0.4s ease;
+}

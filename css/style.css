@@ -1080,8 +1080,9 @@ ol {
 }
 
 .categories__text h1 {
-	font-family: "Cookie", cursive;
-	color: #111111;
+	/* font-family: "Cookie", cursive; */
+	/* color: #111111; */
+	font-size: 50px;
 	margin-bottom: 5px;
 	
 }
@@ -1158,6 +1159,8 @@ ol {
 	margin-right: 0;
 }
 
+
+
 .product__item {
 	margin-bottom: 35px;
 	height: 30%;
@@ -1201,6 +1204,11 @@ ol {
 .product__item__pic .label.stockout {
 	background: #111111;
 }
+
+.product__item__pic .label.coomingsoon {
+	background: #ca1515;
+}
+
 
 .product__item__pic .label.stockblue {
 	background: #0066bd !important;
